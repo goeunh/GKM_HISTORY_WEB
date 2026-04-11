@@ -696,7 +696,7 @@ export default function App() {
           <section id="timeline" className="space-y-16">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div>
-                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">연구 <span className="text-brand">타임라인</span></h2>
+                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white">크리티컬 타임라인</h2>
                 <p className="text-lg text-slate-500 dark:text-slate-400 max-w-xl">
                   글로벌 및 지역적 맥락에서 역사적 왜곡 사례를 연대순으로 분석합니다.
                 </p>
@@ -707,7 +707,7 @@ export default function App() {
                     onClick={() => setEditingItem({ type: 'WORLD' })}
                     className="btn-primary flex items-center gap-2"
                   >
-                    <Plus className="w-5 h-5" /> 연구 타임라인 추가
+                    <Plus className="w-5 h-5" /> 크리티컬 타임라인 추가
                   </button>
                 </div>
               )}

@@ -20,7 +20,7 @@ export default function Navbar({ onAdminClick }: NavbarProps) {
 
   const navLinks = [
     { name: '연구 방법론', href: '#methodology' },
-    { name: '연구 타임라인', href: '#timeline' },
+    { name: '크리티컬 타임라인', href: '#timeline' },
     { name: '연간 탐구 로드맵', href: '#roadmap' },
     { name: '학술 지원 도구', href: '#tools' },
   ];
@@ -35,8 +35,8 @@ export default function Navbar({ onAdminClick }: NavbarProps) {
               <Archive className="w-6 h-6 text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">
-                History<span className="text-brand">Archive</span>
+              <span className="text-xl font-extrabold tracking-tight text-white leading-none">
+                History <span className="text-brand">Archive</span>
               </span>
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mt-0.5">Digital Portfolio</span>
             </div>
