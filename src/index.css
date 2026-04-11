@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand: #4F46E5; /* Modern Indigo */
+  --color-brand-light: #818CF8;
+  --color-brand-dark: #3730A3;
+}
+
+@layer base {
+  :root {
+    --bg-primary: #FAFAFA;
+    --bg-secondary: #FFFFFF;
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+    --accent: #4F46E5;
+    --border: #E2E8F0;
+    --card: #FFFFFF;
+    --ring: rgba(79, 70, 229, 0.1);
+  }
+
+  .dark {
+    --bg-primary: #020617; /* Deep Slate 950 */
+    --bg-secondary: #0B1120; /* Slate 900 */
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --accent: #6366F1; /* Indigo 500 */
+    --border: #1E293B;
+    --card: #0F172A;
+    --ring: rgba(99, 102, 241, 0.15);
+  }
+
+  body {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    @apply font-sans transition-all duration-700 ease-in-out;
+    background-image: 
+      radial-gradient(at 0% 0%, var(--ring) 0px, transparent 40%),
+      radial-gradient(at 100% 100%, var(--ring) 0px, transparent 40%),
+      radial-gradient(at 50% 50%, rgba(99, 102, 241, 0.05) 0px, transparent 60%);
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 dark:bg-slate-900/40 backdrop-blur-2xl border border-white/20 dark:border-white/5 shadow-2xl;
+  }
+  
+  .bento-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-brand text-white rounded-2xl font-bold hover:bg-brand-light hover:shadow-[0_0_20px_rgba(79,70,229,0.4)] transition-all active:scale-95 border border-white/10;
+  }
+}
+
+/* 전역 테마 강제 적용 */
+.dark body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* 스크롤바 커스텀 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-700 rounded-full hover:bg-slate-400 dark:hover:bg-slate-600 transition-colors;
+}
