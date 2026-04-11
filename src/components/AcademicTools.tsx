@@ -26,7 +26,7 @@ export default function AcademicTools() {
               <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
                 학술 <br/> <span className="text-brand">지원</span> 도구
               </h2>
-              <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed">
+              <p className="text-lg text-slate-500 dark:text-slate-300 leading-relaxed">
                 심층적인 탐구를 위해 검증된 학술 도구와 역사 데이터베이스를 활용합니다. 
                 본 프로젝트는 국사편찬위원회 및 주요 학술 서비스의 데이터를 바탕으로 합니다.
               </p>
@@ -56,7 +56,7 @@ export default function AcademicTools() {
                       <ExternalLink className="w-5 h-5 text-slate-300 group-hover:text-brand transition-colors" />
                     </div>
                     <h4 className="font-bold text-xl text-slate-900 dark:text-white group-hover:text-brand transition-colors">{link.name}</h4>
-                    <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{link.desc}</p>
+                    <p className="text-sm text-slate-500 dark:text-slate-300 leading-relaxed">{link.desc}</p>
                   </div>
                 </motion.a>
               ))}
@@ -84,7 +84,7 @@ export default function AcademicTools() {
                 ].map((method) => (
                   <span 
                     key={method}
-                    className="px-4 py-2 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-sm font-bold text-slate-600 dark:text-slate-400 hover:bg-brand hover:text-white hover:border-brand transition-all cursor-default backdrop-blur-sm"
+                    className="px-4 py-2 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-sm font-bold text-slate-600 dark:text-slate-300 hover:bg-brand hover:text-white hover:border-brand transition-all cursor-default backdrop-blur-sm"
                   >
                     {method}
                   </span>

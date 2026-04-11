@@ -33,7 +33,7 @@ export default function KoreanHistoryTimeline({ items, isAdmin, onEdit, onDelete
         </div>
 
         <div className="relative w-full md:w-64">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 dark:text-slate-300" />
           <input
             type="text"
             placeholder="연도 또는 키워드 검색..."
@@ -58,7 +58,7 @@ export default function KoreanHistoryTimeline({ items, isAdmin, onEdit, onDelete
             />
           ))
         ) : (
-          <div className="py-12 text-center text-slate-400 italic glass-card rounded-[24px]">
+          <div className="py-12 text-center text-slate-400 dark:text-slate-300 italic glass-card rounded-[24px]">
             검색 결과가 없습니다.
           </div>
         )}

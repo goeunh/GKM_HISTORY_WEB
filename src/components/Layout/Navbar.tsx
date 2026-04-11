@@ -48,7 +48,7 @@ export default function Navbar({ onAdminClick }: NavbarProps) {
               <a 
                 key={link.name} 
                 href={link.href}
-                className="text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-brand dark:hover:text-white transition-colors"
+                className="text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-brand dark:hover:text-white transition-colors"
               >
                 {link.name}
               </a>

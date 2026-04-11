@@ -52,7 +52,7 @@ export default function TimelineForm({ item, onSave, onClose }: TimelineFormProp
         <form onSubmit={handleSubmit} className="p-8 space-y-8 max-h-[70vh] overflow-y-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <label className="block text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest">Category</label>
+              <label className="block text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest">Category</label>
               <select 
                 value={formData.type}
                 onChange={e => setFormData({...formData, type: e.target.value as HistoryType})}
@@ -64,7 +64,7 @@ export default function TimelineForm({ item, onSave, onClose }: TimelineFormProp
               </select>
             </div>
             <div className="space-y-2">
-              <label className="block text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest">Year / Period</label>
+              <label className="block text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest">Year / Period</label>
               <input 
                 type="text" 
                 value={formData.year}
@@ -75,7 +75,7 @@ export default function TimelineForm({ item, onSave, onClose }: TimelineFormProp
               />
             </div>
             <div className="space-y-2">
-              <label className="block text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest">Sort Year (Number, B.C. is negative)</label>
+              <label className="block text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest">Sort Year (Number, B.C. is negative)</label>
               <input 
                 type="number" 
                 value={formData.sort_year}
@@ -87,7 +87,7 @@ export default function TimelineForm({ item, onSave, onClose }: TimelineFormProp
           </div>
 
           <div className="space-y-2">
-            <label className="block text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest">Research Title</label>
+            <label className="block text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest">Research Title</label>
             <input 
               type="text" 
               value={formData.title}
@@ -98,7 +98,7 @@ export default function TimelineForm({ item, onSave, onClose }: TimelineFormProp
           </div>
 
           <div className="space-y-2">
-            <label className="block text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest">Summary</label>
+            <label className="block text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest">Summary</label>
             <textarea 
               value={formData.summary}
               onChange={e => setFormData({...formData, summary: e.target.value})}

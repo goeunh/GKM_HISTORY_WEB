@@ -114,7 +114,7 @@ export default function ProjectRoadmap({ isAdmin }: ProjectRoadmapProps) {
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-brand dark:text-brand-light">
             연간 탐구 로드맵
           </h2>
-          <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-lg italic">
+          <p className="text-slate-500 dark:text-slate-300 max-w-2xl mx-auto text-lg italic">
             "사료, 문학, 그리고 현대 미디어를 통해 역사 왜곡의 메커니즘을 해체하는 10차시의 비판적 여정"
           </p>
           
@@ -157,7 +157,7 @@ export default function ProjectRoadmap({ isAdmin }: ProjectRoadmapProps) {
                     </div>
                     <div>
                       <div className="flex items-center gap-3 mb-1">
-                        <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                        <span className="text-[10px] font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wider">
                           차시-{session.session_order.toString().padStart(2, '0')}
                         </span>
                         <span className="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-700" />
@@ -184,7 +184,7 @@ export default function ProjectRoadmap({ isAdmin }: ProjectRoadmapProps) {
                     >
                       <div className="px-6 pb-8 md:px-8 md:pb-10 ml-0 md:ml-18">
                         <div className="p-6 bg-slate-50 dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5 space-y-6">
-                          <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
+                          <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
                             {session.description}
                           </p>
                           

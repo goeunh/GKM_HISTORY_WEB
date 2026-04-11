@@ -88,7 +88,7 @@ export default function TimelineItemCard({
                   {item.type} History
                 </div>
                 
-                <span className={`font-mono font-bold text-sm md:text-base tracking-tight transition-colors duration-300 ${isExpanded ? 'text-brand' : 'text-slate-500 dark:text-slate-400'}`}>
+                <span className={`font-mono font-bold text-sm md:text-base tracking-tight transition-colors duration-300 ${isExpanded ? 'text-brand' : 'text-slate-500 dark:text-slate-300'}`}>
                   {item.year}
                 </span>
 
@@ -113,7 +113,7 @@ export default function TimelineItemCard({
               </h4>
 
               {!isExpanded && (
-                <p className="text-base text-slate-500 dark:text-slate-400 line-clamp-2 leading-relaxed max-w-3xl font-medium">
+                <p className="text-base text-slate-500 dark:text-slate-300 line-clamp-2 leading-relaxed max-w-3xl font-medium">
                   {item.summary}
                 </p>
               )}
@@ -142,8 +142,8 @@ export default function TimelineItemCard({
                 <div className="space-y-10">
                   {/* Summary for Expanded State */}
                   <div className="space-y-3">
-                    <h5 className="text-[11px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em]">Research Overview</h5>
-                    <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+                    <h5 className="text-[11px] font-black text-slate-400 dark:text-slate-400 uppercase tracking-[0.2em]">Research Overview</h5>
+                    <p className="text-lg text-slate-600 dark:text-slate-200 leading-relaxed font-medium">
                       {item.summary}
                     </p>
                   </div>
@@ -156,7 +156,7 @@ export default function TimelineItemCard({
                       </div>
                       <div className="space-y-2">
                         <h5 className="font-extrabold text-slate-900 dark:text-white text-sm uppercase tracking-wider">Hypothesis</h5>
-                        <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                        <p className="text-sm text-slate-500 dark:text-slate-300 leading-relaxed">
                           {item.hypothesis}
                         </p>
                       </div>
@@ -168,7 +168,7 @@ export default function TimelineItemCard({
                       </div>
                       <div className="space-y-2">
                         <h5 className="font-extrabold text-slate-900 dark:text-white text-sm uppercase tracking-wider">Core Impact</h5>
-                        <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                        <p className="text-sm text-slate-500 dark:text-slate-300 leading-relaxed">
                           {item.impact}
                         </p>
                       </div>
@@ -180,7 +180,7 @@ export default function TimelineItemCard({
                       </div>
                       <div className="space-y-2">
                         <h5 className="font-extrabold text-slate-900 dark:text-white text-sm uppercase tracking-wider">Conclusion</h5>
-                        <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                        <p className="text-sm text-slate-500 dark:text-slate-300 leading-relaxed">
                           {item.conclusion}
                         </p>
                       </div>
@@ -194,8 +194,8 @@ export default function TimelineItemCard({
                         <ShieldCheck className="w-6 h-6" />
                       </div>
                       <div className="space-y-2 relative z-10">
-                        <h5 className="font-extrabold text-blue-600 dark:text-blue-400 text-sm uppercase tracking-wider">Fact Check</h5>
-                        <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed italic font-medium">
+                        <h5 className="font-extrabold text-blue-600 dark:text-blue-300 text-sm uppercase tracking-wider">Fact Check</h5>
+                        <p className="text-base text-slate-600 dark:text-slate-200 leading-relaxed italic font-medium">
                           {item.fact_check}
                         </p>
                       </div>
@@ -207,8 +207,8 @@ export default function TimelineItemCard({
                         <Scale className="w-6 h-6" />
                       </div>
                       <div className="space-y-2 relative z-10">
-                        <h5 className="font-extrabold text-purple-600 dark:text-purple-400 text-sm uppercase tracking-wider">Critical Opinion</h5>
-                        <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+                        <h5 className="font-extrabold text-purple-600 dark:text-purple-300 text-sm uppercase tracking-wider">Critical Opinion</h5>
+                        <p className="text-base text-slate-600 dark:text-slate-200 leading-relaxed font-medium">
                           {item.critical_opinion}
                         </p>
                       </div>
@@ -226,7 +226,7 @@ export default function TimelineItemCard({
                     </div>
                     <div className="relative">
                       <div className="absolute -left-4 top-0 bottom-0 w-1 bg-brand rounded-full opacity-50" />
-                      <p className="pl-4 text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-serif italic">
+                      <p className="pl-4 text-lg text-slate-600 dark:text-slate-200 leading-relaxed font-serif italic">
                         "{item.evidence}"
                       </p>
                     </div>
