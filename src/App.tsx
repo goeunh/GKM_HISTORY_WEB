@@ -561,6 +561,10 @@ export default function App() {
                         className="w-full h-full object-cover" 
                         referrerPolicy="no-referrer" 
                         alt="Avatar Preview"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src = "https://picsum.photos/seed/researcher/400/400";
+                        }}
                       />
                     </div>
                     <label className="absolute inset-0 flex items-center justify-center bg-black/60 text-white opacity-0 group-hover:opacity-100 rounded-[32px] cursor-pointer transition-all duration-300 backdrop-blur-sm">

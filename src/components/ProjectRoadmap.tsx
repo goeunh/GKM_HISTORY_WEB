@@ -111,7 +111,7 @@ export default function ProjectRoadmap({ isAdmin }: ProjectRoadmapProps) {
             <Sparkles className="w-4 h-4" />
             탐구 여정
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-brand dark:text-brand-light">
             연간 탐구 로드맵
           </h2>
           <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-lg italic">

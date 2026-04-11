@@ -28,6 +28,10 @@ export default function Hero({ profile }: HeroProps) {
               alt="Researcher Avatar" 
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = "https://picsum.photos/seed/researcher/400/400";
+              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
