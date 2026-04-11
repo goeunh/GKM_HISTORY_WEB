@@ -5,6 +5,9 @@ import { getSupabase } from '../lib/supabase';
 import { RoadmapSession } from '../types/history';
 import RoadmapForm from './RoadmapForm';
 
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
 // 아이콘 매핑 객체
 const ICON_MAP: Record<string, any> = {
   Search, BookOpen, FileText, ArrowRight, CheckCircle2, Presentation, Calendar, Clock, Target
@@ -184,9 +187,25 @@ export default function ProjectRoadmap({ isAdmin }: ProjectRoadmapProps) {
                     >
                       <div className="px-6 pb-8 md:px-8 md:pb-10 ml-0 md:ml-18">
                         <div className="p-6 bg-slate-50 dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5 space-y-6">
-                          <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
-                            {session.description}
-                          </p>
+                          <div className="markdown-body">
+                            <ReactMarkdown 
+                              remarkPlugins={[remarkGfm]}
+                              components={{
+                                p: ({...props}) => <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-lg mb-4 last:mb-0" {...props} />,
+                                strong: ({...props}) => <strong className="font-bold text-brand dark:text-brand-light" {...props} />,
+                                ul: ({...props}) => <ul className="list-disc list-inside space-y-2 mb-4 text-slate-600 dark:text-slate-300" {...props} />,
+                                ol: ({...props}) => <ol className="list-decimal list-inside space-y-2 mb-4 text-slate-600 dark:text-slate-300" {...props} />,
+                                li: ({...props}) => <li className="ml-4" {...props} />,
+                                h1: ({...props}) => <h1 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white" {...props} />,
+                                h2: ({...props}) => <h2 className="text-xl font-bold mb-3 text-slate-900 dark:text-white" {...props} />,
+                                h3: ({...props}) => <h3 className="text-lg font-bold mb-2 text-slate-900 dark:text-white" {...props} />,
+                                blockquote: ({...props}) => <blockquote className="border-l-4 border-brand/30 pl-4 italic my-4 text-slate-500 dark:text-slate-400" {...props} />,
+                                code: ({...props}) => <code className="bg-slate-100 dark:bg-white/10 px-1.5 py-0.5 rounded text-sm font-mono text-brand" {...props} />,
+                              }}
+                            >
+                              {session.description}
+                            </ReactMarkdown>
+                          </div>
                           
                           {isAdmin && (
                             <div className="flex justify-end gap-2 pt-4 border-t border-slate-200 dark:border-white/5">

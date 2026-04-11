@@ -121,12 +121,12 @@ export default function RoadmapForm({ item, onSave, onClose }: RoadmapFormProps)
 
           <div className="space-y-2">
             <label className="flex items-center gap-2 text-sm font-bold text-slate-700 dark:text-slate-300">
-              <AlignLeft className="w-4 h-4 text-brand" /> 상세 설명
+              <AlignLeft className="w-4 h-4 text-brand" /> 상세 설명 (Markdown 지원)
             </label>
             <textarea
               required
-              rows={4}
-              placeholder="탐구 내용 및 활동 상세 설명"
+              rows={6}
+              placeholder="탐구 내용 및 활동 상세 설명 (마크다운 형식을 사용할 수 있습니다. 예: **굵게**, - 리스트 등)"
               value={formData.description}
               onChange={e => setFormData({ ...formData, description: e.target.value })}
               className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl focus:ring-2 focus:ring-brand/20 outline-none transition-all resize-none"
