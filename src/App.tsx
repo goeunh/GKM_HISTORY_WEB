@@ -635,7 +635,7 @@ export default function App() {
           {/* Methodology Section (Bento Style) */}
           <section id="methodology" className="space-y-12 scroll-mt-32">
             <div className="text-center max-w-3xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">연구 <span className="text-brand">방법론</span></h2>
+              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 text-white">연구 <span className="text-brand">방법론</span></h2>
               <p className="text-lg text-slate-500 dark:text-slate-400">
                 사료 비판과 현대 담론 분석을 결합한 다차원적 역사 분석 접근법을 지향합니다.
               </p>
@@ -696,7 +696,9 @@ export default function App() {
           <section id="timeline" className="space-y-16">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div>
-                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white">크리티컬 타임라인</h2>
+                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white">
+                  GKM | <span className="text-brand">크리티컬</span> 타임라인
+                </h2>
                 <p className="text-lg text-slate-500 dark:text-slate-400 max-w-xl">
                   글로벌 및 지역적 맥락에서 역사적 왜곡 사례를 연대순으로 분석합니다.
                 </p>
@@ -808,7 +810,7 @@ export default function App() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-brand/50 to-transparent" />
         
         <div className="max-w-3xl mx-auto space-y-8">
-          <p className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white leading-tight">
+          <p className="text-2xl md:text-3xl font-bold text-white leading-tight">
             "역사를 잊은 민족에게 미래는 없다. <br/> 사료는 과거와 현재를 잇는 대화의 창이다."
           </p>
           

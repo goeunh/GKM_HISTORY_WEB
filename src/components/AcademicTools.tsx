@@ -23,7 +23,7 @@ export default function AcademicTools() {
                 <Sparkles className="w-4 h-4" />
                 연구 지원 리소스
               </div>
-              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-white">
                 학술 <br/> <span className="text-brand">지원</span> 도구
               </h2>
               <p className="text-lg text-slate-500 dark:text-slate-300 leading-relaxed">

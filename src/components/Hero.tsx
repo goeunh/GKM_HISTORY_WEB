@@ -50,13 +50,13 @@ export default function Hero({ profile }: HeroProps) {
             디지털 역사 포트폴리오 2026
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight leading-[1.1]">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight leading-[1.1] text-white">
             역사의 <span className="text-brand">진실</span>을 마주하다
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8 font-medium max-w-2xl">
             {profile.name} <span className="text-slate-300 dark:text-slate-700 mx-2">|</span> 
-            <span className="text-slate-900 dark:text-white"> {profile.school}</span>
+            <span className="text-white"> {profile.school}</span>
           </p>
           
           <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-10">

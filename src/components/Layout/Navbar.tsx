@@ -20,7 +20,7 @@ export default function Navbar({ onAdminClick }: NavbarProps) {
 
   const navLinks = [
     { name: '연구 방법론', href: '#methodology' },
-    { name: '크리티컬 타임라인', href: '#timeline' },
+    { name: 'GKM | 크리티컬 타임라인', href: '#timeline' },
     { name: '연간 탐구 로드맵', href: '#roadmap' },
     { name: '학술 지원 도구', href: '#tools' },
   ];
@@ -48,7 +48,7 @@ export default function Navbar({ onAdminClick }: NavbarProps) {
               <a 
                 key={link.name} 
                 href={link.href}
-                className="text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-brand dark:hover:text-white transition-colors"
+                className="text-sm font-bold text-slate-300 hover:text-white transition-colors"
               >
                 {link.name}
               </a>
@@ -87,7 +87,7 @@ export default function Navbar({ onAdminClick }: NavbarProps) {
                   key={link.name} 
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-lg font-bold text-slate-900 dark:text-white"
+                  className="text-lg font-bold text-white"
                 >
                   {link.name}
                 </a>
